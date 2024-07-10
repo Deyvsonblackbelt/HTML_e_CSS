@@ -1,22 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabalhando com links</title>
+    <title>Midías em HTML5</title>
 </head>
 <body>
-    <h1>Usando links externos</h1>
-    <p>Você pode acessar o meu <a href="https://github.com/Deyvsonblackbelt" target="_blank" rel="external">repositório público no GitHub</a></p>
-    <p>Você também pode acessar o meu <a href="https://www.youtube.com/@deyvsonnascimento5132/featured" target="_blank" rel="external">canal gratuiro no youtube</a></p>
-    <h1>Usando links internos</h1>
-    <p>Está é a primeira pagina do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next" target="_self"></a>segunda página</p>
-    <p>você também pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p>    
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
 
-    <h1>Links para download</h1>
-    <ul>
-        <li><a href="livro/meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
-        <li><a href="livro/meulivro.zip" type="application/zip"></a>Livro compactado em ZIP</li>
-    </ul>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio preload="auto" autoplay controls loop>
+        <source src="midia/Underground Academy - Hanu Dixit.mp3" type="audio/mpeg">
+        <source src="midia/Underground-Academy-Hanu-Dixit.ogg"  type="audio/ogg">
+        <source src="midia/Underground-Academy-Hanu-Dixit.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Underground Academy - Hanu Dixit.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+
+    </audio>
+
 </body>
 </html>

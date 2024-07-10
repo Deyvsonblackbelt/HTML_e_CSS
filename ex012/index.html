@@ -1,29 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Midías em HTML5</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>Imagem Dinâmica</h1>
-    <p>Tente abrir esse site em vários dispositivos ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu própio servidor</p>
 
-    <picture>
-        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
-        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
-        <img src="imagens/foto-g.png" alt="Imagem flexível">
-    </picture>
+    <video width="500" poster="imagens/limoes-capa.png" controls> 
+        <source src="midia/meuvideo.mp4">
+        <source src="midia/Meu-video.mp4">
+        <source src="midia/Meuvideo.webm">
+        <source src="midia/meuvideo_1.ogv">
+        <p>Seu navrgador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
 
-    <h1>Reproduzindo Áudio</h1>
-    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
-    <audio preload="auto" autoplay controls loop>
-        <source src="midia/Underground Academy - Hanu Dixit.mp3" type="audio/mpeg">
-        <source src="midia/Underground-Academy-Hanu-Dixit.ogg"  type="audio/ogg">
-        <source src="midia/Underground-Academy-Hanu-Dixit.wav" type="audio/wav">
-        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Underground Academy - Hanu Dixit.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="500" height="281" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=Sou6ulkt1jfa0ZzZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-    </audio>
-
+    <h1>Inserindo vídeos do Vímeo</h1>
+    <iframe src="https://player.vimeo.com/video/7636697?h=ad4069f09e&color=ffffff&portrait=0" width="500" height="281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 </body>
 </html>

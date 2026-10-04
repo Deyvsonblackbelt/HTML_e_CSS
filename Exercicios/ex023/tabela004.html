@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,15 +32,21 @@
             Filmes Favoritos
         </caption>
         <thead>
-            tr>
-                <th>Grupos</th>
-                <th>Nomes</th>
-                <th>Filmes</th>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
             </tr>
         </thead>
+        <tfoot>
+            <tr>
+                <th colspan="4" scope="row">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>    
         <tbody>
             <tr>
-                <th rowspan="3">Mulheres</th>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -60,15 +66,9 @@
                 <td>Matriz</td>
                 <td>Big Hero</td>
             </tr>
-
+           
             <tr>
-                <td>Grupo 4</td>
-                <td>Ana</td>
-                <td>Interestelar</td>
-            </tr>
-
-            <tr>
-                <th rowspan="3">Homens</th>
+                <th rowspan="3" scope="rowgroup">Homens</th>
                 <td>Pedro</td>
                 <td>Intocáveis</td>
                 <td>Anmésia</td>

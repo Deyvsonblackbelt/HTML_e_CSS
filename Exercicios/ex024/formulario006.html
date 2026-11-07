@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de formulário</title>
+</head>
+<body>
+    <h1>Formulário de Teste</h1>
+    <form action="cadastro.js" method="post">
+        
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" id="icor" name="icor">
+        </p>
+
+        <p>
+            <label for="isatisfacao">Nivel de satisfação:</label>
+            <input type="range" id="isatisfacao" name="satisfacao" min="0" max="10">
+        </p>
+
+        <p>
+            <label for="ifoto">Foto:</label>
+            <input type="file" id="ifoto" name="foto">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>

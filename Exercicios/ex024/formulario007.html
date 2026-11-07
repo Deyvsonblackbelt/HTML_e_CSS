@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Teste</title>
+</head>
+<body>
+    <h1>Formulário de Teste</h1>
+    <form action="cadastro.js" method="post" auto-complete="on">
+        
+        <p>
+            <label for="iestado">Estado:</label>
+            <select name="estado" id="iest">
+            
+                <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Região Norte">
+                    <option value="AC">Acre</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="RO">Rondônia</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                </optgroup>
+            </select>    
+        </p>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" lista="lstprof">
+            <datalist id="lstprof">
+                <option value="Programador">
+                <option value="Analista de Sistemas">
+                <option value="Engenheiro de Software">
+                <option value="Administrador de Banco de Dados">
+            </datalist>
+        </p>
+
+        <p>
+            <label for="iecidade">Cidade:</label>
+            <input type="text" name="cidade" id="iecidade">
+        </p>
+    </form>
+</body>
+</html>

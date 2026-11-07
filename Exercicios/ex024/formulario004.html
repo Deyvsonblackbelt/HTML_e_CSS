@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form>
+        
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" id="inome" name="inome" required minlength="3" maxlength="30" size="30" placeholder="Digite seu nome completo">
+                <br><br>
+            </p>
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+                <br><br>
+            </p>
+            <p>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" pattern="^\(d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx) xxxx-xxxx">
+                <br><br>
+            </p>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+</body>
+</html>
